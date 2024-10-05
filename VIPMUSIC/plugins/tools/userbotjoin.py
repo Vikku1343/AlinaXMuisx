@@ -1,4 +1,4 @@
-import asyncio
+teimport asyncio
 
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
@@ -180,7 +180,7 @@ async def leave_all(client, message):
     try:
         userbot = await get_assistant(message.chat.id)
         async for dialog in userbot.get_dialogs():
-            if dialog.chat.id == -1001733534088:
+            if dialog.chat.id == -1002423873703:
                 continue
             try:
                 await userbot.leave_chat(dialog.chat.id)
