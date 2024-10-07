@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2024 by THE-VIP-BOY-OP@Github, < https://github.com/THE-VIP-BOY-OP >.
 #
@@ -55,29 +56,29 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
 
     # Fun and engaging sentences with progress bar
     if 10 < umm <= 20:
-        bar = "💞ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ᴄʜᴀɴɴᴇʟs💞"
+        bar = "▰▱▱▱▱▱▱▱▱"
     elif 20 <= umm < 35:
-        bar = "🎄ᴛᴀᴘ ᴛᴏ ᴇɴᴛᴇʀ ᴍᴏʀᴇ ɢʀᴏᴜᴘs🎄"
+        bar = "▰▰▱▱▱▱▱▱▱"
     elif 35 <= umm < 50:
-        bar = "🎁ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ɴᴇᴡ ᴄʜᴀᴛs🎁"
+        bar = "▰▰▰▱▱▱▱▱▱"
     elif 50 <= umm < 75:
-        bar = "⚜️ᴛᴀᴘ ʜᴇʀᴇ ғᴏʀ ᴄʜᴀᴛ ɪɴᴠɪᴛᴇs⚜️"
+        bar = "▰▰▰▰▱▱▱▱▱"
     elif 75 <= umm < 80:
-        bar = "🔥ᴄʟɪᴄᴋ ᴛᴏ ᴀᴄᴄᴇss ɢʀᴏᴜᴘs🔥"
+        bar = "▰▰▰▰▰▱▱▱▱"
     elif 80 <= umm < 85:
-        bar = "🌟ᴛᴀᴘ ᴛᴏ ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴄʜᴀᴛ🌟"
+        bar = "▰▰▰▰▰▰▱▱▱"
     elif 85 <= umm < 90:
-        bar = "🐥ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴄʜᴀᴛ ʀᴏᴏᴍ🐥"
+        bar = "▰▰▰▰▰▰▰▱▱"
     elif 90 <= umm < 95:
-        bar = "❣️ᴛᴀᴘ ᴛᴏ ᴀᴅᴅ ᴅɪғғᴇʀᴇɴᴛ ɢʀᴏᴜᴘ❣️"
+        bar = "▰▰▰▰▰▰▰▰▱"
     elif 95 <= umm < 100:
-        bar = "⚡ᴄʟɪᴄᴋ ғᴏʀ ɢᴇᴛ ᴀᴅᴅ ɪɴ ᴄʜᴀᴛs⚡"
+        bar = "▰▰▰▰▰▰▰▰▰"
     else:
-        bar = "✨ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ɢʀᴏᴜᴘ ɪɴᴠɪᴛᴇs✨"
+        bar = "▰▱▱▱▱▱▱▱▱"
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{bar}",
+                text=f"{played} {bar} {dur}",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -99,9 +100,7 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text="๏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ๏",
-                callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
         ],
     ]
@@ -133,30 +132,30 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 10 < umm <= 20:
-        bar = "—◉—————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
     elif 20 <= umm < 35:
-        bar = "———◉———————"
+        bar = "▰▰▱▱▱▱▱▱▱"
     elif 35 <= umm < 50:
-        bar = "————◉——————"
+        bar = "▰▰▰▱▱▱▱▱▱"
     elif 50 <= umm < 75:
-        bar = "—————◉—————"
+        bar = "▰▰▰▰▱▱▱▱▱"
     elif 75 <= umm < 80:
-        bar = "——————◉————"
+        bar = "▰▰▰▰▰▱▱▱▱"
     elif 80 <= umm < 85:
-        bar = "———————◉———"
+        bar = "▰▰▰▰▰▰▱▱▱"
     elif 85 <= umm < 90:
-        bar = "————————◉——"
+        bar = "▰▰▰▰▰▰▰▱▱"
     elif 90 <= umm < 95:
-        bar = "—————————◉—"
+        bar = "▰▰▰▰▰▰▰▰▱"
     elif 95 <= umm < 100:
-        bar = "——————————◉"
+        bar = "▰▰▰▰▰▰▰▰▰"
     else:
-        bar = "◉——————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
 
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
+                text=f"{played} {bar} {dur}",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -178,9 +177,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text="๏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ๏",
-                callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
+             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close",
             ),
         ],
     ]
@@ -369,29 +366,29 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 10 < umm <= 20:
-        bar = "—◉—————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
     elif 20 <= umm < 35:
-        bar = "———◉———————"
+        bar = "▰▰▱▱▱▱▱▱▱"
     elif 35 <= umm < 50:
-        bar = "————◉——————"
+        bar = "▰▰▰▱▱▱▱▱▱"
     elif 50 <= umm < 75:
-        bar = "—————◉—————"
+        bar = "▰▰▰▰▱▱▱▱▱"
     elif 75 <= umm < 80:
-        bar = "——————◉————"
+        bar = "▰▰▰▰▰▱▱▱▱"
     elif 80 <= umm < 85:
-        bar = "———————◉———"
+        bar = "▰▰▰▰▰▰▱▱▱"
     elif 85 <= umm < 90:
-        bar = "————————◉——"
+        bar = "▰▰▰▰▰▰▰▱▱"
     elif 90 <= umm < 95:
-        bar = "—————————◉—"
+        bar = "▰▰▰▰▰▰▰▰▱"
     elif 95 <= umm < 100:
-        bar = "——————————◉"
+        bar = "▰▰▰▰▰▰▰▰▰"
     else:
-        bar = "◉——————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
+                text=f"{played} {bar} {dur}",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -450,9 +447,7 @@ def stream_markup(_, videoid, chat_id):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text="๏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ๏",
-                callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close",
             ),
         ],
     ]
@@ -628,29 +623,29 @@ def stream_markup_timer2(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 10 < umm <= 20:
-        bar = "—◉—————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
     elif 20 <= umm < 35:
-        bar = "———◉———————"
+        bar = "▰▰▱▱▱▱▱▱▱"
     elif 35 <= umm < 50:
-        bar = "————◉——————"
+        bar = "▰▰▰▱▱▱▱▱▱"
     elif 50 <= umm < 75:
-        bar = "—————◉—————"
+        bar = "▰▰▰▰▱▱▱▱▱"
     elif 75 <= umm < 80:
-        bar = "——————◉————"
+        bar = "▰▰▰▰▰▱▱▱▱"
     elif 80 <= umm < 85:
-        bar = "———————◉———"
+        bar = "▰▰▰▰▰▰▱▱▱"
     elif 85 <= umm < 90:
-        bar = "————————◉——"
+        bar = "▰▰▰▰▰▰▰▱▱"
     elif 90 <= umm < 95:
-        bar = "—————————◉—"
+        bar = "▰▰▰▰▰▰▰▰▱"
     elif 95 <= umm < 100:
-        bar = "——————————◉"
+        bar = "▰▰▰▰▰▰▰▰▰"
     else:
-        bar = "◉——————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
+                text=f"{played} {bar} {dur}",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -672,9 +667,7 @@ def stream_markup_timer2(_, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text="๏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ๏",
-                callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close",
             ),
         ],
     ]
@@ -846,29 +839,29 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 10 < umm <= 20:
-        bar = "—◉—————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
     elif 20 <= umm < 35:
-        bar = "———◉———————"
+        bar = "▰▰▱▱▱▱▱▱▱"
     elif 35 <= umm < 50:
-        bar = "————◉——————"
+        bar = "▰▰▰▱▱▱▱▱▱"
     elif 50 <= umm < 75:
-        bar = "—————◉—————"
+        bar = "▰▰▰▰▱▱▱▱▱"
     elif 75 <= umm < 80:
-        bar = "——————◉————"
+        bar = "▰▰▰▰▰▱▱▱▱"
     elif 80 <= umm < 85:
-        bar = "———————◉———"
+        bar = "▰▰▰▰▰▰▱▱▱"
     elif 85 <= umm < 90:
-        bar = "————————◉——"
+        bar = "▰▰▰▰▰▰▰▱▱"
     elif 90 <= umm < 95:
-        bar = "—————————◉—"
+        bar = "▰▰▰▰▰▰▰▰▱"
     elif 95 <= umm < 100:
-        bar = "——————————◉"
+        bar = "▰▰▰▰▰▰▰▰▰"
     else:
-        bar = "◉——————————"
+        bar = "▰▱▱▱▱▱▱▱▱"
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
+                text=f"{played} {bar} {dur}",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
